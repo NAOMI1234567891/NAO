@@ -1,0 +1,205 @@
+/* Styles généraux */
+body {
+  background-size: cover;
+  background-position: cover;
+  background-repeat: repeat;
+  height: auto;
+}
+
+/* Styles du header */
+header {
+  background-color: rgb(54, 99, 187);
+  color: rgb(236, 237, 238);
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px; /* Ajustez la taille du logo selon vos besoins */
+  height: auto;
+  margin-right: 10px; /* Marge à droite du logo */
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.search-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+#menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu ul li a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+#menu ul li a:hover {
+  background-color: #ddd;
+}
+
+#menu-btn {
+  background-color: #f8faf9;
+  color: rgb(49, 46, 46);
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#menu-btn:hover {
+  background-color: #3f8eb5;
+}
+.title {
+  text-align: center; /* Centrer le texte */
+  color:rgb(82, 110, 250)
+}
+
+.title h1 {
+  font-size: 36px; /* Taille de la police */
+  font-weight: bold; /* Texte en gras */
+}
+.image-container {
+  text-align: center; /* Centrer l'image horizontalement */
+}
+
+.image-container img {
+  max-width: 40%; /* Assurer que l'image ne dépasse pas la largeur du conteneur */
+  height: auto; /* Permettre à l'image de conserver son ratio d'aspect */
+}
+.rounded-box {
+  border-radius: 10px; /* Rayon des coins arrondis */
+  background-color: #ffffff; /* Couleur de fond blanc */
+  padding: 20px; /* Espace intérieur pour le texte */
+  border: 2px solid #f2eeee; /* Bordure de 2 pixels de couleur noire */
+  width: 300px; /* Largeur du cadre */
+}
+
+.rounded-box p {
+  margin: 0; /* Supprimer les marges par défaut du paragraphe */
+}
+.grid-container {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux éléments de se disposer sur plusieurs lignes */
+  justify-content: center; /* Centre les éléments horizontalement */
+}
+
+.rounded-box {
+  border-radius: 10px; /* Rayon des coins arrondis */
+  background-color: #5770ec; /* Couleur de fond blanc */
+  padding: 20px; /* Espace intérieur pour le texte */
+  border: 2px solid #080808; /* Bordure de 2 pixels de couleur noire */
+  width: 300px; /* Largeur du cadre */
+  margin: 10px; /* Marge autour des cadres */
+  color:white
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grille avec des colonnes flexibles */
+  gap: 10px; /* Espacement entre les images */
+}
+
+.image {
+  overflow: hidden; /* Masquer le dépassement de l'image */
+}
+
+.image img {
+  width: 100%; /* Pour remplir la largeur de la div parent */
+  height: auto; /* Pour conserver les proportions de l'image */
+}
+/* Styles du menu */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+.gallery-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  color:#5770ec
+}
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+}
+.gallery-item p {
+  margin: 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+  .form-group 
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+}
+
+table td {
+  background-color: #f9f9f9;
+}
+
+table tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}

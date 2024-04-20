@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="LOGO NOADOS.jpg" alt="NAODOS Security Logo" class="logo">
+                <h1>NAODOS SECURITY</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Rechercher...">
+                <!-- Utiliser une icône pour la barre de recherche -->
+                <button class="search-btn"><i class="fas fa-search fa-lg"></i></button>
+            </div>
+            <div class="menu-container">
+                <button id="menu-btn">Menu</button>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="PAGE1.html">Accueil</a></li>
+                        <li><a href="PAGE2.html">Inscription</a></li>
+                        <li><a href="PAGE3.html">Connexion</a></li>
+                        <li><a href="PAGE4.html">Tests</a></li>
+                        <li><a href="PAGE5.html">Solution</a></li>
+                        <li><a href="PAGE6.html">Nos outils</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-btn"><i class="fas fa-bars fa-lg"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <h2>Inscription</h2>
+
+    <form action="Formulaire.php" method="post">
+        <article>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+        </article>
+
+        <article>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+        </article>
+
+        <article>
+            <label for="date_naissance">Date de Naissance :</label>
+            <input type="date" id="date_naissance" name="date_naissance" required>
+        </article>
+
+        <article>
+            <label for="lieu_naissance">Lieu de Naissance :</label>
+            <input type="text" id="lieu_naissance" name="lieu_naissance" required>
+        </article>
+
+        <article>
+            <label for="telephone">N° Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required>
+        </article>
+
+        <article>
+            <label for="email">Adresse Email :</label>
+            <input type="email" id="email" name="email" required>
+        </article>
+
+        <article>
+            <label for="adresse">Adresse :</label>
+            <textarea id="adresse" name="adresse" rows="4" cols="50" required></textarea>
+        </article>
+
+        <article>
+            <label for="nationalite">Nationalité :</label>
+            <input type="text" id="nationalite" name="nationalite" required>
+        </article>
+
+        <article>
+            <label for="secteur_activite">Secteur d'activité :</label>
+            <input type="text" id="secteur_activite" name="secteur_activite">
+        </article>
+
+        <article>
+            <label for="statut">Statut :</label>
+            <input type="text" id="statut" name="statut">
+        </article>
+
+        <article>
+            <label for="mot_de_passe">Mot de Passe :</label>
+            <input type="password" id="mot_de_passe" name="mot_de_passe" required>
+        </article>
+
+        <article>
+            <label for="confirmation_mot_de_passe">Confirmation Mot de Passe :</label>
+            <input type="password" id="confirmation_mot_de_passe" name="confirmation_mot_de_passe" required>
+        </article>
+
+        <article>
+            <label for="nom_domaine">Nom de Domaine :</label>
+            <input type="text" id="nom_domaine" name="nom_domaine">
+        </article>
+
+        <article>
+            <label for="pays_residence">Pays de Résidence :</label>
+            <input type="text" id="pays_residence" name="pays_residence" required>
+        </article>
+
+        <article>
+            <label for="piratage">Avez-vous déjà été piraté(e) ?</label>
+            <select id="piratage" name="piratage">
+                <option value="oui">Oui</option>
+                <option value="non">Non</option>
+            </select>
+        </article>
+
+        <!-- Question sur les centres d'intérêts -->
+        <article>
+            <label for="centres_interets">Centres d'intérêts :</label><br>
+            <input type="checkbox" id="interet1" name="interet1" value="sport">
+            <label for="interet1">sport</label><br>
+            <input type="checkbox" id="interet2" name="interet2" value="danse">
+            <label for="interet2"> danse</label><br>
+            <input type="checkbox" id="interet3" name="interet3" value="musique">
+            <label for="interet2"> mode</label><br>
+            <input type="checkbox" id="interet3" name="interet3" value="musique">
+            <label for="interet2"> cuisine</label><br>
+            <input type="checkbox" id="interet3" name="interet3" value="musique">
+            <label for="interet2"> art</label><br>
+            <input type="checkbox" id="interet3" name="interet3" value="musique">
+            <label for="interet2"> jeux</label><br>
+            
+            <!-- Ajoutez autant d'articles que nécessaire -->
+        </article>
+
+<input type="submit" value="Envoyer">
+
+</form>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+ </body>
+
+ </html>
